@@ -55,13 +55,12 @@ as its principal limitation.
 │   ├── raw_nasa_archive_2026-07-15.csv       raw download, 6,319 planets
 │   ├── radius_provenance_lookup.csv          measured vs derived radius, per planet
 │   ├── filtered_main_sample.csv              main analysis sample, 2,587 planets
-│   └── filtered_transit_only_sample.csv      sensitivity variant, 2,562 planets
 │
 ├── report/
-│   └── The_Missing_Middle_report.pdf
+│   └── The_Missing_Middle.pdf
 │
 └── presentation/
-    └── The_Missing_Middle_presentation.pptx
+    └── The_Missing_Middle.pptx
 ```
 
 Notebooks are numbered in execution order. Each one after 01 reads
@@ -79,7 +78,6 @@ Parameters (PSCompPars) table, downloaded **15 July 2026**.
 | `raw_nasa_archive_2026-07-15.csv` | 6,319 | Raw download. One row per confirmed planet, 84 columns of orbital, physical and stellar parameters with uncertainties. Unmodified. |
 | `radius_provenance_lookup.csv` | 6,319 | Per-planet record of whether the archive's radius was measured or derived from the Chen & Kipping (2017) mass–radius relation. Used by filter step 3. |
 | `filtered_main_sample.csv` | 2,587 | Main analysis sample, produced by notebook 01. |
-| `filtered_transit_only_sample.csv` | 2,562 | Sensitivity variant, restricted to transit detections. |
 
 PSCompPars is a *composite* catalogue: different columns for the same planet may come
 from different literature sources and are not guaranteed to be mutually consistent. This
